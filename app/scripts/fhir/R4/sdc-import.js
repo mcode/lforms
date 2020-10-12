@@ -200,6 +200,13 @@ function addSDCImportFns(ns) {
               answer.system = option[optionKey[0]].system;
             }
           }
+          // Add support for valueReference
+          else if (optionKey[0] === 'valueReference') {
+            if(option[optionKey[0]].reference !== undefined) answer.reference = option[optionKey[0]].reference;
+            if(option[optionKey[0]].display !== undefined) answer.text = option[optionKey[0]].display;
+            if(option[optionKey[0]].type !== undefined) answer.type = option[optionKey[0]].type;
+            if(option[optionKey[0]].identifier !== undefined) answer.identifier = option[optionKey[0]].identifier;
+          }
           else {
             answer.text = option[optionKey[0]].toString();
           }
