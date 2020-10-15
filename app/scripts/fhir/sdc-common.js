@@ -39,10 +39,8 @@ function addCommonSDCFns(ns) {
     "TX": 'String',
     "BL": 'Boolean',
     "URL": 'Url',
-    "CNE": 'Reference',
-    "CWE": 'Reference',
-    //"CNE": 'Coding',
-    //"CWE": 'Coding',
+    "CNE": 'Coding',
+    "CWE": 'Coding',
     "QTY": 'Quantity'
   };
 
