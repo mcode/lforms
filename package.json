@@ -1,7 +1,6 @@
 {
   "name": "lforms",
   "version": "26.2.0",
-  "type": "module",
   "keywords": [
     "fhir",
     "Questionnaire",
