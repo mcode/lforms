@@ -6,7 +6,7 @@
     "Questionnaire",
     "SDC"
   ],
-  "main": "app/scripts/index.js",
+  "main": "dist/lforms-26.2.0/lforms.min.js",
   "files": [
     "app"
   ],
@@ -76,6 +76,7 @@
   "repository": "github:lhncbc/lforms",
   "license": "See LICENSE.md",
   "scripts": {
+    "prepare": "npm run build",
     "wiredep": "grunt wiredep",
     "webpack:fhir": "webpack --env.fhirOnly=true",
     "webpack:r4": "webpack --env.r4Only=true",
